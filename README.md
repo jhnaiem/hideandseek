@@ -1,16 +1,12 @@
 # hideandseek
 
-A new Flutter application.
+A tap to score game where a squirrel with appear in random place among the nine and the user will have to tap on the squirrel to score. 
 
-## Getting Started
+## Watch the demo
+![Jahid's](https://github.com/jhnaiem/images/blob/main/h%26S.gif)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Play store link
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+

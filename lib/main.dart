@@ -372,9 +372,10 @@ class _PlayGroundState extends State<PlayGround> {
                 ),
                 onPressed: () {
                   print('pressed start');
-                  if (flag)
+                  if (flag) {
+                    mScore = 0;
                     startGame();
-                  else {
+                  } else {
                     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                       content: Text("Already started!!!"),
                     ));
@@ -402,12 +403,72 @@ class _PlayGroundState extends State<PlayGround> {
                   if (timer.isActive) {
                     timer.cancel();
                     flag = true;
-                    mScore = 0;
                   }
+                  resetSurface();
                 },
               ),
             )),
           ]),
         ]));
+  }
+
+  void resetSurface() {
+    setState(() {
+      switch (rand) {
+        case 1:
+          {
+            point1 = 'surface.png';
+          }
+          break;
+
+        case 2:
+          {
+            point2 = 'surface.png';
+          }
+          break;
+
+        case 3:
+          {
+            point3 = 'surface.png';
+          }
+          break;
+
+        case 4:
+          {
+            point4 = 'surface.png';
+          }
+          break;
+
+        case 5:
+          {
+            point5 = 'surface.png';
+          }
+          break;
+
+        case 6:
+          {
+            point6 = 'surface.png';
+          }
+          break;
+
+        case 7:
+          {
+            point7 = 'surface.png';
+          }
+          break;
+
+        case 8:
+          {
+            point8 = 'surface.png';
+          }
+          break;
+
+        case 9:
+          {
+            point9 = 'surface.png';
+          }
+          break;
+      }
+    });
   }
 }
